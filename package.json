@@ -1,0 +1,18 @@
+{
+  "name": "babel-transpile-node_modules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "transpile-jsx": "babel node_modules/__testTranspilePackage -d node_modules/__testTranspilePackage/dist --presets=@babel/preset-react",
+    "transpile-jsx-cfg-file": "babel node_modules/__testTranspilePackage -d node_modules/__testTranspilePackage/dist --config-file ./transpile-npm-package.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-react": "^7.0.0"
+  }
+}
